@@ -10,16 +10,12 @@ import SearchPage from './searchPage';
 import ProfilePage from './profilePage';
 import MusicPage from './musicPage';
 import WelcomePage from './welcomePage';
-import axios from 'axios';
+
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      mockloginName: '',
-      mockloginPassword:''
-    }
-    this.mockLogin = this.mockLogin.bind(this)
+    this.state = {nextSong: 0}
   }
 
   //****************View Controller********************
@@ -28,11 +24,11 @@ class App extends React.Component {
       case "WelcomePage":
         return <WelcomePage/>
       case "ProfilePage":
-        return <ProfilePage/>
+        return <ProfilePage switchView={this.selectThisView}/>
       case "SearchPage":
         return <SearchPage/>
       case "LiveChatPage":
-        return <LiveChatPage user={this.state.mockloginName}/>
+        return <LiveChatPage  user={this.state.mockloginName}/>
       case "BandPage":
         return <BandPage/>
       case "MusicPage":
@@ -47,11 +43,11 @@ class App extends React.Component {
   //****************Navigation List********************
   selectThisView(event, item) {
     console.log(arguments[0])
-    // this.setState({view: arguments[0]})
     var action = {
       type: "switchView",
       view: arguments[0]
     }
+    console.log( action)
     this.props.dispatch(action)
   }
   generateNavList = () => {
@@ -65,19 +61,9 @@ class App extends React.Component {
     for (var key in navItems) {
       if (key === this.props.view) {
         navList.push((
-        // <div>
-        //   <div className="navListItem-selected-effect">
-        //     <div className={"navListItem-helper-circle"}/>
-        //     <div className={"navListItem-helper-square"}/>
-        //   </div>
           <div className={"navListItem navListItemSelected"} >
             <div className={"navListItem-text navListItem-text-selected"}>&nbsp; &nbsp; &#9752; &nbsp; {navItems[key]}</div>
           </div>
-        //<div className="navListItem-selected-effect">
-        //    <div className={"navListItem-helper-circle"}/>
-        //    <div className={"navListItem-helper-square"}/>
-        //  </div>
-        //</div>
         ))
       } else {
         navList.push((
@@ -91,28 +77,44 @@ class App extends React.Component {
 
   //****************Logout Button********************
   generateLogoutButton = () => {
-    return <button className={"logoutButton"} onClick={this.logoutUser}>Logout</button>
+    return <button className="logoutButton" onClick={this.logoutUser}>Logout</button>
   }
   logoutUser = () => {
     console.log("User is logged out")
-    var logout = {
-      type: "initializeUser",
-
+    var action = {
+      type: "logoutUser"
     }
-    this.props.dispatch(logout)
-
+    this.props.dispatch(action);
   }
 
   //****************Choose between Welcome / profile page********************
+  nextSong = (event) => {
+    console.log("song Finished")
+    // event.preventDefault()
+    const action = {
+      type: "nextSong"
+    }
+    this.props.dispatch(action)
+    // window.location.reload(false);
+
+  }
+
+
+  updateTime = () => {
+    this.props.dispatch({type:"songPlayTime"})
+    // console.log("timer per sec", this.props.songtime)
+  }
+
   generateViewOnDisplay = () => {
-    console.log("****SignedIn",this.props.loggedIn)
     if (this.props.loggedIn) {
 
       const currView = this.viewChange(this.props.view)
       const navList = this.generateNavList()
       const logoutButton = this.generateLogoutButton()
+      // console.log("***Check music name",this.props.song.musicName)
+
       return (
-        <>
+        <div className='App-wrapper'>
           <div className="navBar">
             <div className="userAvatar">
               <div className="Avatar-container">
@@ -127,33 +129,26 @@ class App extends React.Component {
             <div className="logoutButton-container">
               {logoutButton}
             </div>
-            </div>
-          <div className="currPage">
-            {currView}
           </div>
-        </>
+          <div className="currPage"> {currView} </div>
+          {/* <MusicPlayer/> */}
+          {/* <div style={{"display":"none"}}>
+            <ReactAudioPlayer autoplay listenInterval={1000} src={this.props.song.url} id="hiddenplayer" controls onEnded={this.nextSong} onListen={this.updateTime} />
+          </div> */}
+        </div>
       )
     } else {
       return <WelcomePage/>
     }
   }
 
-
-
-
-
   render() {
     const viewOnDisplay = this.generateViewOnDisplay()
-    console.log('rendering...',this.props.view)
-    return (
-      <div>
-        <div className="App">
-          <div className='App-wrapper'>
-            {viewOnDisplay}
-          </div>
-        </div>
-      </div>
 
+    return (
+        <div className="App">
+            {viewOnDisplay}
+        </div>
     );
 }
 }
@@ -165,7 +160,8 @@ const stateToProps = (state)=>{
     user: state.currUser,
     loggedIn: state.loggedIn,
     view: state.view,
-    userData: state.userData
+    song: state.currSong,
+    songtime: state.currTime
   }
 }
 
