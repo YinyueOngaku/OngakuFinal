@@ -20,6 +20,7 @@ const defaultState = {
   bandJoinedData: [],
   bandFollowingData: [],
   bandSelecting: {},
+  bandData: [],
   allUser: [],
   allBand: [],
   allMusic: [],
@@ -109,7 +110,7 @@ const reducerFunc = function(state = defaultState, action) {
       return newState
     case 'initializeUser':
       var newState = {...state};
-//      newState.view = action.view;      
+//      newState.view = action.view;
       newState.loggedIn = true
       newState.userData = action.userdata
       newState.currUser = action.userdata.username
