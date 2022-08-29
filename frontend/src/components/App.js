@@ -140,57 +140,13 @@ class App extends React.Component {
 
 
 
-  mockLogin = function() {
-    console.log('logging in step 1... ',this.state.mockloginName)
-    axios({
-      method: "post",
-      data: {
-        username: this.state.mockloginName,
-        password: this.state.mockloginPassword,
-      },
-      withCredentials: true,
-      url: 'http://localhost:3005/account/login'
-    })
-    .then((res) => {
-      console.log('logging in step 2...',res)
 
-      axios({
-        method: "get",
-        withCredentials: true,
-        url: 'http://localhost:3005/account/getUser'
-      })
-      .then((res) => {
-        console.log(res.data)
-        var action = {
-          type: "initializeUser",
-          view: "ProfilePage",
-          loggedIn:true,
-          userData: res.data,
-          currUser: res.data.username
-        }
-        this.props.dispatch(action)
-
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-
-    })
-  }
 
   render() {
     const viewOnDisplay = this.generateViewOnDisplay()
     console.log('rendering...',this.props.view)
     return (
       <div>
-        {!this.props.loggedIn && (
-          <div className='mockLogin'>
-            <h1>Login</h1>
-            <input placeholder='username' onChange={e => {this.setState({mockloginName:e.target.value})}}/>
-            <input placeholder='password' onChange={e => {this.setState({mockloginPassword:e.target.value})}}/>
-            <button onClick={this.mockLogin}>Submit</button>
-          </div>
-        )}
         <div className="App">
           <div className='App-wrapper'>
             {viewOnDisplay}
