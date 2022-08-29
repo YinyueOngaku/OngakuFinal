@@ -23,7 +23,7 @@ const BandPage = function({bandData, username}) {
   const dispatch =useDispatch();
 
   useEffect(() => {
-    if (Object.keys(bandData).length === 0) {
+    // if (Object.keys(bandData).length === 0) {
 
       axios.get(`http://localhost:3005/band/fetch/${username}`)
       .then((res) => {
@@ -42,12 +42,13 @@ const BandPage = function({bandData, username}) {
           bandFollowingData: res.data.involvedFollowingBandInfo,
           bandSelecting
         }
+        console.log('checking:', res.data)
         dispatch(initializeBand)
       })
       .catch((err) => {
         console.log(err)
       })
-    }
+    // }
   },[])
 
 
@@ -63,7 +64,7 @@ const BandPage = function({bandData, username}) {
 
   const mapStateToProps = function(state, props) {
     return {
-      bandData: state.bandData,
+      // bandData: state.bandData,
       username: state.currUser
     }
   }
