@@ -15,7 +15,7 @@ const defaultState = {
   avatar: "https://www.croptecshow.com/wp-content/uploads/2017/04/guest-avatar-250x250px.png",
   welcome: "Welcome!",
   loggedIn: false,
-  view: "WelcomePage",
+  view: "ProfilePage",
   userData: {},
   bandJoinedData: [],
   bandFollowingData: [],
@@ -23,6 +23,41 @@ const defaultState = {
   allUser: [],
   allBand: [],
   allMusic: [],
+  playlist: [
+    {
+      musicName: "stay cool, stay cold",
+      url: "http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3",
+      artist: "Candace"
+    },
+    {
+      musicName: "this is real life",
+      url: "http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Sevish_-__nbsp_.mp3",
+      artist: "Kai"
+    },
+    {
+      musicName: "Mario's advanture",
+      url: "http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3",
+      artist: "Ice Ages"
+    },
+    {
+      musicName: "Forever",
+      url: "http://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/music/win.ogg",
+      artist: "Kai"
+    },
+    {
+      musicName: "Winner",
+      url: "http://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/music/lose.ogg",
+      artist: "Ice Ages"
+    },
+    {
+      musicName: "Rice Racer",
+      url: "http://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/music/menu.ogg",
+      artist: "Anonymous"
+    },
+  ],
+  currSongIndex: -1,
+  currSong: {},
+  currTime: 0
 }
 
 
@@ -74,10 +109,21 @@ const reducerFunc = function(state = defaultState, action) {
       return newState
     case 'initializeUser':
       var newState = {...state};
-      newState.view = action.view;
-      newState.loggedIn = action.loggedIn;
-      newState.userData = action.userData;
-      newState.currUser = action.currUser;
+//      newState.view = action.view;      
+      newState.loggedIn = true
+      newState.userData = action.userdata
+      newState.currUser = action.userdata.username
+      newState.avatar = action.userdata.avatar
+      newState.bio = action.userdata.bio
+      newState.category = action.userdata.category
+      newState.following = action.userdata.following
+      newState.follwedby = action.userdata.followedby
+      newState.memberof = action.userdata.memberof
+      newState.chatroom = action.userdata.chatroom
+      newState.uploads = action.userdata.uploads
+      newState.currSongIndex += 1
+      newState.currSong = newState.playlist[newState.currSongIndex]
+      newState.timeline = action.userdata.timeline
       return newState;
     case 'initializeBand':
       var newState = {...state};
@@ -111,6 +157,120 @@ const reducerFunc = function(state = defaultState, action) {
 
 
       newState.bandSelecting = selectBand;
+      return newState
+    case 'deleteRepo':
+      var newState = {...state}
+      var repo = []
+      for (var i = 0; i < newState.uploads.length; i++) {
+        if (newState.uploads[i].musicName !== action.repoName) {
+          repo.push(newState.uploads[i])
+        }
+      }
+      newState.uploads = repo;
+      return newState
+    case 'addToPlaylist':
+      var newState = {...state}
+      for (var i = 0; i < newState.uploads.length; i++) {
+        if (newState.uploads[i].musicName === action.repoName) {
+          newState.playlist.push({
+            musicName: newState.uploads[i].musicName,
+            url: newState.uploads[i].version_history[newState.uploads[i].version_history.length-1].url,
+            artist: action.user
+          })
+        }
+      }
+      return newState
+    case 'updateRepo':
+      var newState = {...state}
+      console.log("...action new", action.new)
+      newState.uploads = [...newState.uploads, action.new]
+      return newState
+    case 'updateAvatar':
+      var newState = {...state}
+      newState.avatar = action.avatar
+      return newState
+    case 'updateBasicInfo':
+      var newState = {...state}
+      newState.category = action.genre
+      newState.bio = action.bio
+      return newState
+    case 'logoutUser':
+      return defaultState
+    case 'initializeUserMock':
+      var newState = {...state};
+      newState.view = action.view;
+      newState.loggedIn = action.loggedIn;
+      newState.userData = action.userData;
+      newState.currUser = action.currUser;
+      console.log('store checking!', newState, action.currUser)
+      return newState;
+    case 'switchView':
+      var newState = {...state}
+      newState.view = action.view
+      return newState;
+    case 'changeUser':
+      var newState = {...state}
+      newState.currUser = action.username
+      return newState;
+    case 'nextSong':
+      console.log("***next song***")
+      var newState = {...state}
+
+      newState.currTime = 0
+      newState.currSongIndex += 1
+      if (newState.currSongIndex === newState.playlist.length) {
+        newState.currSongIndex = 0
+      }
+      newState.currSong = newState.playlist[newState.currSongIndex]
+      // console.log("from Store: ", newState.currSong, newState.currSongIndex)
+      return newState;
+
+    case "prevSong":
+      console.log("***prev song***")
+      var newState = {...state}
+      newState.currSongIndex -= 1
+      if (newState.currSongIndex === -1) {
+        newState.currSongIndex = 0
+      }
+      newState.currTime = 0
+      newState.currSong = newState.playlist[newState.currSongIndex]
+      // console.log("from Store: ", newState.currSong, newState.currSongIndex)
+      return newState;
+    case "songPlayTime":
+      var newState = {...state}
+      newState.currTime = newState.currTime + 1
+      // console.log(newState.currTime)
+      return newState
+    case "playThisSong":
+      var newState = {...state}
+      for ( var i = 0; i < newState.playlist.length; i++) {
+        if (newState.playlist[i].musicName === action.songName) {
+          newState.currSongIndex = i
+          newState.currSong = newState.playlist[i]
+          break
+        }
+      }
+      return newState
+    case "deleteThisSong":
+      var newState = {...state}
+      for ( var i = 0; i < newState.playlist.length; i++) {
+        console.log("*************",newState.playlist[i].musicName, action.songName)
+        if (newState.playlist[i].musicName === action.songName) {
+          if (i > newState.currSongIndex) {
+            newState.playlist.splice(i,1)
+
+          } else {
+            newState.playlist.splice(i,1)
+            newState.currSongIndex = Math.max(0, newState.currSongIndex-1)
+            newState.currSong = newState.playlist[newState.currSongIndex]
+
+
+
+          }
+          break
+        }
+      }
+      console.log("*****", newState.playlist)
       return newState
     default:
       return state;
