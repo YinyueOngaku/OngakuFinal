@@ -110,7 +110,7 @@ router.get('/getallUser', async (req, res) => {
 router.put('/editUser', async (req, res) => {
   if (req.user) {
     try {
-      const userInfo = await JamsUser.findOneAndUpdate({username: req.user.username}, req.body.newUser, {
+      const userInfo = await JamsUser.findOneAndUpdate({username: req.user.username}, req.body, {
         new: true,
         upsert: true,
       })
@@ -125,6 +125,63 @@ router.put('/editUser', async (req, res) => {
   }
 })
 
+router.post('/uploads', (async (req, res) => {
+  if (req.body.user) {
+    console.log("***account upload")
+    try {
+      var data = req.body;
+      const newSong = await addNewSong(data);
+      res.status(200).send('song uploaded!');
+    } catch (err) {
+     console.log(err)
+     res.status(404).send(err)
+    }
+   } else {
+     res.status(200).send('please log in first')
+   }
+}))
+const addNewSong = (data) => {
+  var filter = {"username": data.username};
+  console.log('filter:', filter, 'data:', data);
+  var song = {
+    musicName: data.musicName,
+    version_history: {
+    version_name: data.version_history.version_name,
+    description: data.version_history.description,
+    url: data.version_history.url,
+    likes: data.version_history.likes,
+    createdAt: data.version_history.createdAt
+    }
+  };
+  var update = {$push: {'uploads': song }};
+  console.log('update :', update);
+  return JamsUser.findOneAndUpdate(filter, update);
+}
+
+router.post('/version', (req, res) => {
+  if (req.body.user) {
+    var data = req.body;
+    addNewVersion(data)
+    .then((result) => { res.status(200).send(result)})
+    .catch((error) => {console.log('error:', error); res.status(400).send(error);});
+  } else {
+    res.status(200).send('please log in first')
+  }
+})
+
+const addNewVersion = (data) =>  {
+  var newEntry = {
+    version_name: data.uploads.version_history.version_name,
+    description: data.uploads.version_history.description,
+    url: data.uploads.version_history.url,
+    likes: 0,
+    created_At: data.uploads.version_history.createdAt,
+  }
+  filter = {"username": data.username, "uploads.musicName": data.uploads.musicName};
+  update = {$push: { "uploads.$.version_history": newEntry}}
+  console.log('filter:', filter, 'update:', update);
+  return JamsUser.findOneAndUpdate(filter, update)
+}
 
 
 module.exports = router;
