@@ -58,7 +58,7 @@ class loginPage extends React.Component {
 
             <div className="loginbtnGroup">
               <button className="login-login">Login</button>
-              <button className="login-login">Guest</button>
+              <text className="login-login" onClick={()=>{alert("Distinguished guest, try these login info\n username: guest\n password: guest")}}>Guest</text>
               <button className="login-login login-signup" onClick={()=>{this.props.switchView("Login")}}>Signup</button>
 
             </div>
