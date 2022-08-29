@@ -276,16 +276,16 @@
 
 }
 
-.loginlabel {
+.loginlabel1 {
   /* margin: 20px; */
-  color:gray;
-  width: 100%;
-  padding-top: 10%;
-  height: 30px;
-  background-color: none;
-  border-width: 0;
-  border-bottom-width: 1px;
-  border-color: rgb(169, 165, 165);
+  color:gray !important;
+  /* width: 100% !important; */
+  padding-top: 10% !important;
+  /* height: 30px !important; */
+  /* background-color: none !important; */
+  /* border-width: 0 !important; */
+  /* border-bottom-width: 1px !important; */
+  /* border-color: rgb(169, 165, 165) !important; */
 }
 
 .loginbtnGroup {
@@ -389,16 +389,16 @@
   color: var(--dark);
   /* font-style: italic; */
 }
-.signuplabel {
+.signuplabel1 {
   /* margin: 20px; */
-  color:gray;
-  width: 100%;
-  padding-top: 5%;
-  height: 30px;
+  color:gray !important;
+  /* width: 100%; */
+  padding-top: 5% !important;
+  /* height: 30px;
   background-color: none;
   border-width: 0;
   border-bottom-width: 1px;
-  border-color: rgb(169, 165, 165);
+  border-color: rgb(169, 165, 165); */
 }
 
 .profile-box {

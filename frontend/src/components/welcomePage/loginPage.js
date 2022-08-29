@@ -49,16 +49,16 @@ class loginPage extends React.Component {
         </div>
 
         <div className="Welcome-login-inputfield">
-          <div className="Ongaku"><text className="Ongaku-text">Ongaku</text></div>
+          <div className="Ongaku"><div className="Ongaku-text">Ongaku</div></div>
           <form className="inputfield" onSubmit={this.authUser}>
-            <label className="loginlabel" htmlfor="username">Username</label>
+            <label className="loginlabel1" htmlFor="username">Username</label>
             <input className="inputbox" name='username'></input>
-            <label className="loginlabel" for="Password">Password</label>
+            <label className="loginlabel1" htmlFor="Password">Password</label>
             <input className="inputbox" name='password' type='password'></input>
 
             <div className="loginbtnGroup">
               <button className="login-login">Login</button>
-              <text className="login-login" onClick={()=>{alert("Distinguished guest, try these login info\n username: guest\n password: guest")}}>Guest</text>
+              <div className="login-login" onClick={()=>{alert("Distinguished guest, try these login info\n username: guest\n password: guest")}}>Guest</div>
               <button className="login-login login-signup" onClick={()=>{this.props.switchView("Login")}}>Signup</button>
 
             </div>

@@ -38,17 +38,17 @@ const signupPage = function(props) {
     </div>
 
     <div className="Welcome-signup-inputfield">
-      <div className="newuser"><text className="newuser-text">New User</text></div>
+      <div className="newuser"><div className="newuser-text">New User</div></div>
       <form className="signupInputfield" onSubmit={regUser}>
-        <label className="signuplabel" htmlfor="username">Username</label>
+        <label className="signuplabel1" htmlFor="username">Username</label>
         <input className="inputbox" name='username'></input>
-        <label className="signuplabel" htmlfor="email">e-mail</label>
+        <label className="signuplabel1" htmlFor="email">e-mail</label>
         <input className="inputbox" name='email' type='email'></input>
-        <label className="signuplabel" for="Password">Password</label>
+        <label className="signuplabel1" htmlFor="Password">Password</label>
         <input className="inputbox" name='password' type='password'></input>
-        <label className="signuplabel" htmlfor="bio" >Bio</label>
+        <label className="signuplabel1" htmlFor="bio" >Bio</label>
         <input className="inputbox" name='bio' placeholder="Tell us about yourself"></input>
-        <label className="signuplabel" htmlfor="genre">Genre</label>
+        <label className="signuplabel1" htmlFor="genre">Genre</label>
         <input className="inputbox" name='genre' placeholder="E.g. Pop, Jazz, R&B"></input>
 
         <div className="signupbtnGroup">
