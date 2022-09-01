@@ -169,46 +169,6 @@ Getting your own copy of Lingo Lingo is easy!
 - Read about the following scripts to understand their functionality
 - Enjoy!
 
-### Scripts
-
-The following scripts can be found in package.json
-
-<hr style="background-color: #5c5c5c;height: 2.0px;"/>
-
-`npm run server`
-
-<i> Launches nodemon to watch the server path and serve static files </i>
-
-`npm run dev`
-
-<i> Launches webpack to bundle your webapp and watch for any changes </i>
-
-`npm run start`
-
-<i> Bundles your webpack in development mode </i>
-
-`npm run build`
-
-<i> Bundles your webpack in production mode </i>
-
-`npm run test`
-
-<i> Calls jest to run any user defined tests </i>
-
-```
-// in package.json
-
-"scripts": {
-    "server-dev": "npx nodemon --watch server server/server.js",
-    "dev": "npx webpack --watch",
-    "start": "Webpack --mode=development",
-    "build": "webpack --mode=production",
-    "test": "jest"
-  },
-```
-
-<hr style="background-color: #5c5c5c;height: 2.0px;"/>
-
 
 
 
