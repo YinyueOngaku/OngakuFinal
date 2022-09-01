@@ -3,6 +3,7 @@
 Ongaku is a social network specifically designed for Musicians around the world!\
 On Ongaku, a user may manage their recent releases, live chat with other musicians, and even exchange ideas and start a new band!
 
+![image](https://user-images.githubusercontent.com/66397999/187837752-78732e68-739d-4d76-8702-2d5912f61cc4.png)
 
 
 
