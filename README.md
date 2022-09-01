@@ -83,8 +83,9 @@ Hyperlink goes here
 - Include an advanced music player with <code>Redux</code> state management and html <audio> properties
 - Allow for rotating playlist, automatic forward/backward and auto song play. 
 - Allow users to add music from other webpages to the play list shown in the Music Player page
+<img width="1436" alt="Untitled (7)" src="https://user-images.githubusercontent.com/90755784/187838525-bd3fa47f-7d20-4763-9e9f-0e0841fb70ba.png">
 
-
+    
 ### User Profile Page
 - Serves as summary of the current logged-in user
 - Allow users visualize their activity history in Ongaku community
@@ -93,7 +94,8 @@ Hyperlink goes here
 <img width="1435" alt="Untitled (1)" src="https://user-images.githubusercontent.com/90755784/187838111-097dc65b-7a8e-4554-80f4-bddb52b08041.png">
 <img width="1428" alt="Untitled (2)" src="https://user-images.githubusercontent.com/90755784/187838119-6b3eb037-4ca0-404e-9025-f6e6fa0b94e0.png">
 
-### Bands
+    
+### Bands Page
 - The user can see the band details on this page. Both the band they joined and the band they followed will be shown on the navigation bar
 - The user can switch the displaying band by clicking on different bands
 - The user can create a new band and invite other musicians to join this new band 
