@@ -79,7 +79,7 @@ Here are additional commands you may use:
 
 ### User Profile Page
 - Serves as summary of the current logged-in user
-- Allow users visualize their activity history in Ongaku community
+- Allows users visualize their activity history in Ongaku community
 - Allows users to manage/edit their profile info and avatar
 - Allows users to version-control their music pieces through github-like repo systems
 <img width="1435" alt="Untitled (1)" src="https://user-images.githubusercontent.com/90755784/187838111-097dc65b-7a8e-4554-80f4-bddb52b08041.png">
