@@ -53,7 +53,7 @@ Here are additional commands you may use:
 
 
 
-## 4. Frontend: Intro to UI and Functionalities
+## 4. Intro to UI and Functionalities
 
 ### Welcome Page - User sign in and sign up
 - Allow new musicians to join the community, and existing musicians to frequently check back on the updates of the community. 
