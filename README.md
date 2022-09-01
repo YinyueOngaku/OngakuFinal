@@ -32,10 +32,10 @@ Hyperlink goes here
 ### Live Chat
 
 ### Music Player
-- Serves as summary of the current logged-in user
-- Allow users visualize their activity history in Ongaku community
-- Allows users to manage/edit their profile info and avatar
-- Allows users to version-control their music pieces through github-like repo systems
+- Include an advanced music player with Redux state management and html <audio> properties
+- Allow for rotating playlist, automatic forward/backward and auto song play. 
+- Allow users to add music from other webpages to the play list shown in the Music Player page
+
 
 ### User Profile Page
 - Serves as summary of the current logged-in user
@@ -51,7 +51,9 @@ Hyperlink goes here
 
 
 ## 5. Backend: Servers and Databases
+### Schema
 
+### Endpoints
 
 
 
