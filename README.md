@@ -1,6 +1,6 @@
 # Ongaku
 ## 1. Overview
-Ongaku is a social network specifically designed for Musicians around the world!\
+Ongaku means "music". Ongaku is a social network specifically designed for Musicians around the world!\
 On Ongaku, a user may manage their recent releases, live chat with other musicians, and even exchange ideas and start a new band!
 
 ![image](https://user-images.githubusercontent.com/66397999/187838935-0db3b857-2889-43aa-9ac3-19372ebdeb9d.png)
