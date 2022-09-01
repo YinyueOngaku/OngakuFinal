@@ -8,6 +8,7 @@ On Ongaku, a user may manage their recent releases, live chat with other musicia
 
 ## 2. Tech Stacks
 ### Frontend
+<div align="left">
     <img src="https://img.shields.io/badge/react-%5E18.2.0-green">
     <img src="https://img.shields.io/badge/redux-%5E4.2.0-green">
     <img src="https://img.shields.io/badge/react_redux-%5E8.0.2-green">
@@ -15,16 +16,20 @@ On Ongaku, a user may manage their recent releases, live chat with other musicia
     <img src="https://img.shields.io/badge/socket.io_client-%5E6.0.0-green">  
     <img src="https://img.shields.io/badge/cloundinary_react-%5E1.8.1-green">  
     <img src="https://img.shields.io/badge/axiost-%5E0.27.2-green"> 
-    
+</div>    
 ### Backend
+<div align="left">
     <img src="https://img.shields.io/badge/express-%5E4.16.1-green">  
     <img src="https://img.shields.io/badge/passport.js-%5E0.6.0-green">  
     <img src="https://img.shields.io/badge/passport-local-%5E1.0.0-green">   
     <img src="https://img.shields.io/badge/axios-%5E0.27.2-green"> 
     <img src="https://img.shields.io/badge/socket.io-%5E4.5.1-green">  
     <img src="https://img.shields.io/badge/bcryptjs-%5E2.4.3-green">      
+    </div> 
 ### Database
+<div align="left">
     <img src="https://img.shields.io/badge/mongoose-%5E6.5.2-blue">
+</div> 
     
 <img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/react" />
 <img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/webpack" />
