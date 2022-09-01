@@ -8,30 +8,22 @@
 - Clone **Ongaku** to your machine
 - Run <code>npm install</code> to install dependencies
 - Choose from one of the following commands; to start the server, run <code>npm run start</code>
-- Enjoy!
+- Have fun at **Ongaku** :)
 
 
 <hr style="background-color: #5c5c5c;height: 2.0px;"/>
 
-`npm run server`
 
-<i> Launches nodemon to watch the server path and serve static files </i>
-
-`npm run dev`
-
-<i> Launches webpack to bundle your webapp and watch for any changes </i>
-
+<i> Launch Ongaku in development mode </i>
 `npm run start`
 
-<i> Bundles your webpack in development mode </i>
-
+<i> Launch Ongaku in production mode </i>
 `npm run build`
 
-<i> Bundles your webpack in production mode </i>
-
+<i> Test your code with jest </i>
 `npm run test`
 
-<i> Calls jest to run any user defined tests </i>
+
 
 ## 4. Intro to UI and Functionalities
 
