@@ -75,7 +75,7 @@ Here are additional commands you may use:
 - Include an advanced music player with <code>Redux</code> state management and html <audio> properties
 - Allow for rotating playlist, automatic forward/backward and auto song play. 
 - Allow users to add music from other webpages to the play list shown in the Music Player page
-
+<img width="1436" alt="Untitled (7)" src="https://user-images.githubusercontent.com/90755784/187839492-8b0642ed-3b28-4b66-a95a-cb4c200f8534.png">
 
 ### User Profile Page
 - Serves as summary of the current logged-in user
@@ -89,6 +89,8 @@ Here are additional commands you may use:
 - The user can see the band details on this page. Both the band they joined and the band they followed will be shown on the navigation bar
 - The user can switch the displaying band by clicking on different bands
 - The user can create a new band and invite other musicians to join this new band 
+<img width="1415" alt="Untitled (5)" src="https://user-images.githubusercontent.com/90755784/187839517-6445ca50-aa58-44d3-9bbf-408c60a19284.png">
+<img width="1420" alt="Untitled (6)" src="https://user-images.githubusercontent.com/90755784/187839520-2472866d-6333-4222-844c-effd157f7697.png">
 
 ### Explore
 - Random bands, users, and music will appear on this page
