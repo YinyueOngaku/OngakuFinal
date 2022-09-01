@@ -76,6 +76,8 @@ Hyperlink goes here
 - Messages can be started with any other person who is connected as a contact. A user can establish a 1 on 1 conversation or they can establish a group conversation with any number of their contacts
 - Once the conversation is started by one user, all other participating contacts will get the new conversation added to their live chat automatically 
 - Socket.io is used for instant send and receive messages, at the same time the messages will be sent to mongo atlas to save all data as history chats
+<img width="1425" alt="Untitled (4)" src="https://user-images.githubusercontent.com/90755784/187838224-c9a9a307-bd2e-468c-b137-83293c87b0d9.png">
+
 
 ### Music Player
 - Include an advanced music player with <code>Redux</code> state management and html <audio> properties
@@ -100,6 +102,7 @@ Hyperlink goes here
 - Random bands, users, and music will appear on this page
 - Users can also search with keywords to explore more music.
 
+<img width="1423" alt="Untitled (3)" src="https://user-images.githubusercontent.com/90755784/187838208-b0b1f61b-2ae6-485a-b11c-ba03be70972e.png">
 
 
 ## 5. Backend: Servers and Databases
