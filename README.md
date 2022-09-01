@@ -17,6 +17,7 @@ On Ongaku, a user may manage their recent releases, live chat with other musicia
     <img src="https://img.shields.io/badge/cloundinary_react-%5E1.8.1-green">  
     <img src="https://img.shields.io/badge/axiost-%5E0.27.2-green"> 
 </div>    
+
 ### Backend
 <div align="left">
     <img src="https://img.shields.io/badge/express-%5E4.16.1-green">  
@@ -25,7 +26,8 @@ On Ongaku, a user may manage their recent releases, live chat with other musicia
     <img src="https://img.shields.io/badge/axios-%5E0.27.2-green"> 
     <img src="https://img.shields.io/badge/socket.io-%5E4.5.1-green">  
     <img src="https://img.shields.io/badge/bcryptjs-%5E2.4.3-green">      
-    </div> 
+</div> 
+ 
 ### Database
 <div align="left">
     <img src="https://img.shields.io/badge/MongoDB-green">
