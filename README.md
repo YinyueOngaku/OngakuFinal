@@ -21,7 +21,7 @@ Here are additional commands you may use:
 
 
 ## 4. Intro to UI and Functionalities
-
+### 4.1 
 ## 5. Contributors
 <table >
     <td align="center">
