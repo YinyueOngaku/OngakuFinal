@@ -20,8 +20,42 @@ Here are additional commands you may use:
 
 
 
-## 4. Intro to UI and Functionalities
-### 4.1 
+## 4. Frontend: Intro to UI and Functionalities
+Hyperlink goes here 
+
+### Welcome Page - User sign in and sign up
+- Allow new musicians to join the community, and existing musicians to frequently check back on the updates of the community. 
+- Authenticate users through <code>local strategy</code> in <code>Passport.js</code>, allowing users to login through username and password.
+- Persist user login status upon refreshing page through <code>Redux-persist</code> library
+- Backend APIs were coded to allow only authenticated users to access resources in the database.
+
+### Live Chat
+
+### Music Player
+- Serves as summary of the current logged-in user
+- Allow users visualize their activity history in Ongaku community
+- Allows users to manage/edit their profile info and avatar
+- Allows users to version-control their music pieces through github-like repo systems
+
+### User Profile Page
+- Serves as summary of the current logged-in user
+- Allow users visualize their activity history in Ongaku community
+- Allows users to manage/edit their profile info and avatar
+- Allows users to version-control their music pieces through github-like repo systems
+
+
+### Bands
+
+### Explore
+
+
+
+## 5. Backend: Servers and Databases
+
+
+
+
+
 ## 5. Contributors
 <table >
     <td align="center">
