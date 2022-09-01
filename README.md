@@ -3,7 +3,6 @@
 Ongaku is a social network specifically designed for Musicians around the world!\
 On Ongaku, a user may manage their recent releases, live chat with other musicians, and even exchange ideas and start a new band!
 
-![image](https://user-images.githubusercontent.com/66397999/187837752-78732e68-739d-4d76-8702-2d5912f61cc4.png)
 
 
 
@@ -18,23 +17,31 @@ On Ongaku, a user may manage their recent releases, live chat with other musicia
     <img src="https://img.shields.io/badge/cloundinary_react-%5E1.8.1-green">  
     <img src="https://img.shields.io/badge/axiost-%5E0.27.2-green"> 
 </div>    
-
 ### Backend
 <div align="left">
     <img src="https://img.shields.io/badge/express-%5E4.16.1-green">  
     <img src="https://img.shields.io/badge/passport.js-%5E0.6.0-green">  
-    <img src="https://img.shields.io/badge/passport_local-%5E1.0.0-green">   
+    <img src="https://img.shields.io/badge/passport-local-%5E1.0.0-green">   
     <img src="https://img.shields.io/badge/axios-%5E0.27.2-green"> 
     <img src="https://img.shields.io/badge/socket.io-%5E4.5.1-green">  
     <img src="https://img.shields.io/badge/bcryptjs-%5E2.4.3-green">      
-</div> 
- 
+    </div> 
 ### Database
 <div align="left">
-    <img src="https://img.shields.io/badge/MongoDB-green">
-    <img src="https://img.shields.io/badge/mongoose-%5E6.5.2-green">
+    <img src="https://img.shields.io/badge/mongoose-%5E6.5.2-blue">
 </div> 
-   
+    
+<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/react" />
+<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/webpack" />
+<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/axios"/>
+<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/nodemon"/>
+<img src="https://img.shields.io/badge/postgres-%5E12.12-blue">
+<img src="https://img.shields.io/badge/zustand-%5E4.0.0-blue">
+<img src="https://img.shields.io/badge/firebase-%5E9.9.2-blue">
+<img src="https://img.shields.io/badge/socket.io-%5E4.5.1-blue">
+<img src="https://img.shields.io/badge/annyang-%5E2.6.1-blue">
+<img src="https://img.shields.io/badge/googleapis-%5E105.0.0-blue">
+</div>
 
 
 ## 3. Run **Ongaku**  Locally
@@ -61,6 +68,8 @@ Hyperlink goes here
 - Authenticate users through <code>local strategy</code> in <code>Passport.js</code>, allowing users to login through username and password.
 - Persist user login status upon refreshing page through <code>Redux-persist</code> library
 - Backend APIs were coded to allow only authenticated users to access resources in the database.
+<img width="1422" alt="Untitled" src="https://user-images.githubusercontent.com/90755784/187838005-ff886a3d-ed4c-4859-895f-65cfa803174f.png">
+
 
 ### Live Chat
 - The live chat feature implemented with <code>Socket.io</code> allows our users to connect directly and instantly with each other on the platform 
