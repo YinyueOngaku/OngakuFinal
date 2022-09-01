@@ -30,6 +30,9 @@ Hyperlink goes here
 - Backend APIs were coded to allow only authenticated users to access resources in the database.
 
 ### Live Chat
+- The live chat feature implemented with [Socket.io](http://Socket.io) allows our users to connect directly and instantly with each other on the platform - Messages can be started with any other person who is connected as a contact. A user can establish a 1 on 1 conversation or they can establish a group conversation with any number of their contacts
+- Once the conversation is started by one user, all other participating contacts will get the new conversation added to their live chat automatically 
+- Socket.io is used for instant send and receive messages, at the same time the messages will be sent to mongo atlas to save all data as history chats
 
 ### Music Player
 - Include an advanced music player with Redux state management and html <audio> properties
@@ -45,8 +48,13 @@ Hyperlink goes here
 
 
 ### Bands
+- The user can see the band details on this page. Both the band they joined and the band they followed will be shown on the navigation bar
+- The user can switch the displaying band by clicking on different bands
+- The user can create a new band and invite other musicians to join this new band 
 
 ### Explore
+- Random bands, users, and music will appear on this page
+- Users can also search with keywords to explore more music.
 
 
 
