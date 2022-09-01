@@ -88,7 +88,8 @@ Hyperlink goes here
 - Allow users visualize their activity history in Ongaku community
 - Allows users to manage/edit their profile info and avatar
 - Allows users to version-control their music pieces through github-like repo systems
-
+<img width="1435" alt="Untitled (1)" src="https://user-images.githubusercontent.com/90755784/187838111-097dc65b-7a8e-4554-80f4-bddb52b08041.png">
+<img width="1428" alt="Untitled (2)" src="https://user-images.githubusercontent.com/90755784/187838119-6b3eb037-4ca0-404e-9025-f6e6fa0b94e0.png">
 
 ### Bands
 - The user can see the band details on this page. Both the band they joined and the band they followed will be shown on the navigation bar
