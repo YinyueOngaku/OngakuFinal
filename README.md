@@ -97,7 +97,10 @@ Hyperlink goes here
 - The user can see the band details on this page. Both the band they joined and the band they followed will be shown on the navigation bar
 - The user can switch the displaying band by clicking on different bands
 - The user can create a new band and invite other musicians to join this new band 
+<img width="1415" alt="Untitled (5)" src="https://user-images.githubusercontent.com/90755784/187838416-38f3d6da-ac60-47d5-bb57-cc6cfc9abfde.png">
+<img width="1420" alt="Untitled (6)" src="https://user-images.githubusercontent.com/90755784/187838423-4da0ee02-81c6-48f1-885d-6bd4ffb069c4.png">
 
+    
 ### Explore
 - Random bands, users, and music will appear on this page
 - Users can also search with keywords to explore more music.
