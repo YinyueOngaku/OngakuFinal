@@ -36,7 +36,7 @@ Hyperlink goes here
 - Socket.io is used for instant send and receive messages, at the same time the messages will be sent to mongo atlas to save all data as history chats
 
 ### Music Player
-- Include an advanced music player with Redux state management and html <audio> properties
+- Include an advanced music player with <code>Redux</code> state management and html <audio> properties
 - Allow for rotating playlist, automatic forward/backward and auto song play. 
 - Allow users to add music from other webpages to the play list shown in the Music Player page
 
