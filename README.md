@@ -10,17 +10,12 @@
 - Choose from one of the following commands; to start the server, run <code>npm run start</code>
 - Have fun at **Ongaku** :)
 
-
-<hr style="background-color: #5c5c5c;height: 2.0px;"/>
-
-
-<i> Launch Ongaku in development mode </i>
+Here are additional commands you may use:
+- <i> Launch Ongaku in development mode </i>
 `npm run start`
-
-<i> Launch Ongaku in production mode </i>
+- <i> Launch Ongaku in production mode </i>
 `npm run build`
-
-<i> Test your code with jest </i>
+- <i> Test your code with jest </i>
 `npm run test`
 
 
