@@ -28,20 +28,10 @@ On Ongaku, a user may manage their recent releases, live chat with other musicia
     </div> 
 ### Database
 <div align="left">
+    <img src="https://img.shields.io/badge/MongoDB-%5E6.5.2-blue">
     <img src="https://img.shields.io/badge/mongoose-%5E6.5.2-blue">
 </div> 
-    
-<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/react" />
-<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/webpack" />
-<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/axios"/>
-<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/nodemon"/>
-<img src="https://img.shields.io/badge/postgres-%5E12.12-blue">
-<img src="https://img.shields.io/badge/zustand-%5E4.0.0-blue">
-<img src="https://img.shields.io/badge/firebase-%5E9.9.2-blue">
-<img src="https://img.shields.io/badge/socket.io-%5E4.5.1-blue">
-<img src="https://img.shields.io/badge/annyang-%5E2.6.1-blue">
-<img src="https://img.shields.io/badge/googleapis-%5E105.0.0-blue">
-</div>
+   
 
 
 ## 3. Run **Ongaku**  Locally
