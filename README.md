@@ -72,7 +72,7 @@ Here are additional commands you may use:
 
 
 ### Music Player
-- Include an advanced music player with <code>Redux</code> state management and html <audio> properties
+- Include an advanced music player with <code>Redux</code> state management and html <code>audio</code> properties
 - Allow for rotating playlist, automatic forward/backward and auto song play. 
 - Allow users to add music from other webpages to the play list shown in the Music Player page
 <img width="1436" alt="Untitled (7)" src="https://user-images.githubusercontent.com/90755784/187839492-8b0642ed-3b28-4b66-a95a-cb4c200f8534.png">
