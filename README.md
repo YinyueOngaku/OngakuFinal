@@ -30,7 +30,8 @@ Hyperlink goes here
 - Backend APIs were coded to allow only authenticated users to access resources in the database.
 
 ### Live Chat
-- The live chat feature implemented with <code>Socket.io<code> allows our users to connect directly and instantly with each other on the platform - Messages can be started with any other person who is connected as a contact. A user can establish a 1 on 1 conversation or they can establish a group conversation with any number of their contacts
+- The live chat feature implemented with <code>Socket.io<code> allows our users to connect directly and instantly with each other on the platform 
+- Messages can be started with any other person who is connected as a contact. A user can establish a 1 on 1 conversation or they can establish a group conversation with any number of their contacts
 - Once the conversation is started by one user, all other participating contacts will get the new conversation added to their live chat automatically 
 - Socket.io is used for instant send and receive messages, at the same time the messages will be sent to mongo atlas to save all data as history chats
 
