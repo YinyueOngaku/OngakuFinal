@@ -352,7 +352,8 @@
 .signupInputfield {
   position: relative;
   /* background-color: green; */
-  top: -5%;
+  /* top: -5%; */
+  top: 3%;
   height: 75%;
   width: 60%;
   display: flex;
@@ -370,6 +371,10 @@
   width: 100%;
   height: 25%;
   /* background-color: pink */
+}
+
+.repos-header {
+  margin-top: 20px;
 }
 
 .newuser{
@@ -590,15 +595,15 @@
 }
 
 .module4 {
-  background-color: var(--background-dark);
+  background-color: var(--other2);
   /* background-color: dodgerblue; */
 }
 .module5 {
-  background-color: var(--background-dark);
+  background-color: var(--other2);
   /* background-color: pink; */
 }
 .module6 {
-  background-color: var(--background-dark);
+  background-color: var(--other2);
   /* background-color: cadetblue; */
 }
 

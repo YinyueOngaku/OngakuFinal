@@ -118,7 +118,7 @@ const Repos = function(props) {
                   <h2>
                     Version Control Editor
                   </h2>
-                  <h3>
+                  <h3 className='repos-header'>
                     Current Version
                   </h3>
                   <table>
@@ -131,7 +131,7 @@ const Repos = function(props) {
                   {currVersionTable}
 
                   </table>
-                  <h3>
+                  <h3 className='repos-header'>
                     History Version
                   </h3>
                   <table>
@@ -145,7 +145,7 @@ const Repos = function(props) {
 
                   </table>
 
-                  <h3>
+                  <h3 className='repos-header'>
                     Upload New Version
                   </h3>
                   <form className="signupInputfield" onSubmit={()=>{uploadVersion()}}>
