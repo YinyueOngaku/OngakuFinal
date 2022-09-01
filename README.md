@@ -22,7 +22,7 @@ On Ongaku, a user may manage their recent releases, live chat with other musicia
 <div align="left">
     <img src="https://img.shields.io/badge/express-%5E4.16.1-green">  
     <img src="https://img.shields.io/badge/passport.js-%5E0.6.0-green">  
-    <img src="https://img.shields.io/badge/passport-local-%5E1.0.0-green">   
+    <img src="https://img.shields.io/badge/passport_local-%5E1.0.0-green">   
     <img src="https://img.shields.io/badge/axios-%5E0.27.2-green"> 
     <img src="https://img.shields.io/badge/socket.io-%5E4.5.1-green">  
     <img src="https://img.shields.io/badge/bcryptjs-%5E2.4.3-green">      
