@@ -1,8 +1,44 @@
 # Ongaku
-
 ## 1. Overview
+Ongaku is a social network specifically designed for Musicians around the world!\
+On Ongaku, a user may manage their recent releases, live chat with other musicians, and even exchange ideas and start a new band!
+
+
+
 
 ## 2. Tech Stacks
+<div align="left">
+### Frontend
+    <img src="https://img.shields.io/badge/react-%5E18.2.0-green">
+    <img src="https://img.shields.io/badge/redux-%5E4.2.0-green">
+    <img src="https://img.shields.io/badge/react_redux-%5E8.0.2-green">
+    <img src="https://img.shields.io/badge/redux_persist-%5E6.0.0-green"> 
+    <img src="https://img.shields.io/badge/socket.io_client-%5E6.0.0-green">  
+    <img src="https://img.shields.io/badge/cloundinary_react-%5E1.8.1-green">  
+    <img src="https://img.shields.io/badge/axiost-%5E0.27.2-green"> 
+    
+### Backend
+    <img src="https://img.shields.io/badge/express-%5E4.16.1-green">  
+    <img src="https://img.shields.io/badge/passport.js-%5E0.6.0-green">  
+    <img src="https://img.shields.io/badge/passport-local-%5E1.0.0-green">   
+    <img src="https://img.shields.io/badge/axios-%5E0.27.2-green"> 
+    <img src="https://img.shields.io/badge/socket.io-%5E4.5.1-green">  
+    <img src="https://img.shields.io/badge/bcryptjs-%5E2.4.3-green">      
+### Database
+    <img src="https://img.shields.io/badge/mongoose-%5E6.5.2-blue">
+    
+<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/react" />
+<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/webpack" />
+<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/axios"/>
+<img src="https://img.shields.io/github/package-json/dependency-version/TitanInSpirit/Project_Atelier/nodemon"/>
+<img src="https://img.shields.io/badge/postgres-%5E12.12-blue">
+<img src="https://img.shields.io/badge/zustand-%5E4.0.0-blue">
+<img src="https://img.shields.io/badge/firebase-%5E9.9.2-blue">
+<img src="https://img.shields.io/badge/socket.io-%5E4.5.1-blue">
+<img src="https://img.shields.io/badge/annyang-%5E2.6.1-blue">
+<img src="https://img.shields.io/badge/googleapis-%5E105.0.0-blue">
+</div>
+
 
 ## 3. Run **Ongaku**  Locally
 - Clone **Ongaku** to your machine
