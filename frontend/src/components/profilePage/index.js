@@ -115,9 +115,9 @@ const ProfilePage = function(props) {
             <div className="module module1">
               <div className="moduleName">Statistics</div>
               <div className="moduleContent">
-                <div><text style={{"font-size": "3rem", "color": "rgb(244, 168, 154)"}}>{props.followedby.length}</text> <text style={{"font-size": "1rem", "color": "rgb(244, 168, 154)"}}>followers</text></div>
-                <div><text style={{"font-size": "3rem", "color": "rgb(244, 168, 154)"}}>{props.following.length}</text> <text style={{"font-size": "1rem", "color": "rgb(244, 168, 154)"}}>following</text></div>
-                <div><text style={{"font-size": "3rem", "color": "rgb(244, 168, 154)"}}>{props.uploads.length}</text> <text style={{"font-size": "1rem", "color": "rgb(244, 168, 154)"}}> uploads </text></div>
+                <div><text style={{"font-size": "3rem"}}>{props.followedby.length}</text> <text style={{"font-size": "1rem"}}>followers</text></div>
+                <div><text style={{"font-size": "3rem"}}>{props.following.length}</text> <text style={{"font-size": "1rem"}}>following</text></div>
+                <div><text style={{"font-size": "3rem"}}>{props.uploads.length}</text> <text style={{"font-size": "1rem"}}> uploads </text></div>
 
               </div>
 

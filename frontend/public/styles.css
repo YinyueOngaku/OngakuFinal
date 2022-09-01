@@ -578,22 +578,28 @@
 
 .module1 {
   width: 47.5%;
-  background-color: rgb(244, 168, 154);
+  background-color: var(--background-dark);
+  /* background-color: var(--other2); */
+  /* background-color: rgb(244, 168, 154); */
 }
 
 .module3 {
   /* width: 47.5%; */
-  background-color: gold;
+  background-color: var(--background-dark);
+  /* background-color: gold; */
 }
 
 .module4 {
-  background-color: dodgerblue;
+  background-color: var(--background-dark);
+  /* background-color: dodgerblue; */
 }
 .module5 {
-  background-color: pink;
+  background-color: var(--background-dark);
+  /* background-color: pink; */
 }
 .module6 {
-  background-color: cadetblue;
+  background-color: var(--background-dark);
+  /* background-color: cadetblue; */
 }
 
 .moduleName {
@@ -609,7 +615,7 @@
 }
 
 .moduleContent {
-  color: white;
+  color: var(--other2);
   font-weight: bold;
   font-size: 1.5rem;
   position: absolute;
@@ -617,6 +623,7 @@
   width: 98%;
   top: 17%;
   /* left: 20px; */
+  /* background-color: var(--shallow); */
   background-color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -634,6 +641,7 @@
   width: 98%;
   top: 17%;
   /* left: 20px; */
+  /* background-color: var(--shallow); */
   background-color: white;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -667,11 +675,10 @@
   height: 31%;
   width: 100%;
   margin-bottom: 5%;
-
   /* border: solid black 5px; */
   border-radius: 20px;
+  /* background-color: var(--other2); */
   /* background-color: pink; */
-
   overflow: auto
 }
 ::-webkit-scrollbar {
@@ -690,7 +697,8 @@
   /* border: solid black 5px; */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: pink;
+  background-color: var(--background-dark);
+  /* background-color: pink; */
 }
 
 .sidebarmoduleName {
@@ -714,6 +722,7 @@
   width: 98%;
   top: 12%;
   /* left: 20px; */
+  /* background-color: var(--shallow); */
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -722,16 +731,18 @@
   overflow: auto
 }
 .addnewrepo {
-  color: pink;
+  color: var(--other2);
+  /* color: pink; */
   font-weight: bold;
   font-size: 1.5rem;
   position: absolute;
   height: 20%;
   width: 96%;
   top: 2%;
+  /* background-color: ; */
   /* left: 20px; */
-  background-color: white;
-  border: 3px solid pink;
+  /* background-color: white; */
+  border: 3px solid var(--other2);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -759,11 +770,13 @@
 
 .addnewrepo:hover {
   color: white;
-  background-color: pink;
+  background-color: var(--dark);
+  /* background-color: pink; */
 
 }
 .existingrepos {
-  color: pink;
+  color: var(--other2);
+  /* color: pink; */
   font-weight: bold;
   font-size: 1.5rem;
   position: absolute;
@@ -781,7 +794,8 @@
 }
 
 .onerepo {
-  color: pink;
+  color: var(--other2);
+  /* color: pink; */
   font-weight: bold;
   font-size: 1.5rem;
   /* position: absolute; */
@@ -791,7 +805,7 @@
   margin-top: 2%;
   /* left: 20px; */
   background-color: white;
-  border: 3px solid pink;
+  border: 3px solid var(--other2);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -805,9 +819,9 @@
   width: 20%;
   /* left: 0px; */
   font-size: 2rem;
-  background-color: pink;
+  background-color: var(--other2);
   color: white;
-  border: 1px solid pink;
+  border: 1px solid var(--other2);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -818,7 +832,8 @@
   position: relative;
   height: 100%;
   width: 60%;
-
+  margin-left: 10px;
+  text-align: center;
   background-color: white;
   /* border: 1px solid pink; */
   display: flex;
@@ -858,6 +873,7 @@
   justify-content: space-evenly;
 }
 .onerepo-versioncontroll:hover {
+  /* color: #30cfd0; */
   color: orange
 }
 .onerepo-delete {
@@ -1087,7 +1103,7 @@ audio {
   display: flex;
   align-items:center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
  background-color: var(--dark);
  color: white;
 }
@@ -1124,6 +1140,7 @@ audio {
   justify-content: space-between;
   width: 100%;
   background-color: cadetblue;
+  color: white;
 }
 
 .playlistitem:hover {
@@ -1164,7 +1181,11 @@ audio {
   color: white;
 }
 .tag-label {
-  background-color: gold
+  padding: 4px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: var(--other1);
+  color: white;
 }
 
 table {

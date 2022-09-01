@@ -60,6 +60,7 @@ const Repos = function(props) {
     <div className="onerepo">
       <div className="onerepo-img">{index+1}</div>
       <div className='onerepo-content'>
+        {console.log('checking music name: ', music.musicName)}
         {music.musicName}
       </div>
       <div className="onerepo-buttons">
