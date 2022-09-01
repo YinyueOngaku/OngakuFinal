@@ -16,7 +16,7 @@ On Ongaku, a user may manage their recent releases, live chat with other musicia
     <img src="https://img.shields.io/badge/redux_persist-%5E6.0.0-green"> 
     <img src="https://img.shields.io/badge/socket.io_client-%5E6.0.0-green">  
     <img src="https://img.shields.io/badge/cloundinary_react-%5E1.8.1-green">  
-    <img src="https://img.shields.io/badge/axiost-%5E0.27.2-green"> 
+    <img src="https://img.shields.io/badge/axios-%5E0.27.2-green"> 
 </div>  
 
 ### Backend
