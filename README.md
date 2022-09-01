@@ -7,7 +7,6 @@ On Ongaku, a user may manage their recent releases, live chat with other musicia
 
 
 ## 2. Tech Stacks
-<div align="left">
 ### Frontend
     <img src="https://img.shields.io/badge/react-%5E18.2.0-green">
     <img src="https://img.shields.io/badge/redux-%5E4.2.0-green">
